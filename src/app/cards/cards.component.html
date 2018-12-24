@@ -1,0 +1,20 @@
+<app-header></app-header>
+<form [formGroup]="Form" (ngSubmit)="createCard(Form)"> 
+  <div class="form-cards">
+    <h1 class="h3 mb-3 font-weight-normal">Cadastro Cartão</h1>
+    
+    <label for="cpf"  class="sr-only">CPF</label>
+    <input type="text"  formControlName="cpf"  class="form-control" placeholder="CPF" required autofocus>
+    
+    <label for="brand" class="sr-only">Bandeira</label>
+    <input type="text" formControlName="brand" class="form-control" placeholder="Bandeira" required>
+
+    <label for="code" class="sr-only">Código</label>
+    <input type="text" formControlName="code" class="form-control" placeholder="Código" required>
+    
+    <label for="expiration_date" class="sr-only">Expiração</label>
+    <input type="text" formControlName="expiration_date" class="form-control" placeholder="Data expiração" required>
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit" >Cadastrar</button>
+  </div>
+  </form>

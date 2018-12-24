@@ -1,0 +1,20 @@
+<app-header></app-header>
+<section>
+  <div class="container">
+    <div class='row'>
+        <div class='row'>
+          <form [formGroup]="searchForm" (ngSubmit)="getUser()" class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" formControlName="searchControl" name="cpf" type="search" placeholder="Digite o CPF" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+<section [hidden]="disable">
+  <div class="details"> 
+  <div class="info">CPF: {{user?.cpf}}</div>
+  <div class="info">Nome: {{user?.name}}</div>
+  <div class="info">Saldo Disponível: {{use?.balance || 0}}</div>
+  </div>
+</section>

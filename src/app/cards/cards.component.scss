@@ -1,0 +1,36 @@
+.form-cards {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin-top: 5%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .form-cards .checkbox {
+    font-weight: 400;
+  }
+  .form-cards .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-cards .form-control:focus {
+    z-index: 2;
+  }
+  
+  .form-cards input[type="cpf"] {
+    margin-bottom: -1px;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-cards input[type="brand"], input[type="expiration_date"]
+  ,input[type="code"]{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  
